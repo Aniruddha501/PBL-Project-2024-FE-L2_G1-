@@ -1,0 +1,94 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:#080808;
+    --second-bg-color:#131313;
+    --text-color:#fff;
+    --main-color:#00ffee;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 50px;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 50px;
+  }
+body {
+    background: var(--bg-color);
+}
+
+.container1 {
+    background-color: var(--second-bg-color);
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+h2{
+  font-size: 50px;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 5%  
+}
+#display {
+    position: relative;
+    width: 92%;
+    background: var(--text-color);
+    left: 4%;
+    font-family: 'Roboto mono', monospace;
+    font-weight: 900;
+    color: var(--second-bg-color);
+    font-size: 35px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    font-weight: 700;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out; 
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: var(--text-color);
+}
+
+

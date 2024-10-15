@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style1.0.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- SIDE BAR -->
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>My Menu</header>
+    <a href="#" class="active">
+      <i class="fas fa-qrcode"></i>
+      <span>Dashboard</span>
+    </a>
+    <a href="#" id="timer_2">
+      <i class="far fa-clock fa-spin"></i>
+      <span>Timer</span>
+    </a>
+    <a href="#" id="stop_watch_2">
+      <i class="fas fa-stopwatch"></i>
+      <span>Stopwatch</span>
+    </a>
+    <a href="#" id="calendar_2">
+      <i class="fas fa-calendar"></i>
+      <span>Calender</span>
+    </a>
+
+    <a href="#" id="to_do_list_2">
+      <i class="fas fa-tasks"></i>
+      <span>To-Do list</span>
+
+
+
+      <a href="#" id="about_us_1">
+        <i class="far fa-question-circle"></i>
+        <span>About</span>
+      </a>
+
+   </div>
+
+
+  <!--  profile button -->
+  <div class="Profile">
+    <nav>
+      <img src="images/logo.png" alt="" class="logo"> 
+      <h1 class="Heading"> Productivity
+        <span>Pulse</span> </h1>
+      <img src="images/user.jpg" class="user-pic" onclick="toggleMenu() ">
+
+      <div class="sub-menu-wrap" id="submenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="images/user.jpg">
+            <h3>User</h3>
+          </div>
+
+          <hr>
+          <a href="profile.html" class="sub-menu-link">
+            <img src="images/user.jpg">
+            <p id="profile_1">Profile</p>
+            <span>></span>
+          </a>
+          <a href="password.html" class="sub-menu-link">
+            <img src="images/setting.png">
+            <p id="password_1">Password </p>
+            <span>></span>
+          </a>
+
+          <a href="setting.html" class="sub-menu-link">
+            <img src="images/setting.png">
+            <p id="setting_1">Setting </p>
+            <span>></span>
+          </a>
+
+
+          <a href="landing.html" class="sub-menu-link">
+            <img src="images/logout.png">
+            <p id="logout_b">Logout </p>
+            <span>></span>
+
+          </a>
+        </div>
+
+      </div>
+    </nav>
+    <!--  greeting -->
+    <h2 class="greeting">Welcome! </h2>
+
+
+    <!-- MENU BOXES -->
+
+
+<div class="container">
+  <div class="box-container">
+    <a href="#" class="box" id="calendar_1">
+      <img src="images/calender.jpg" alt="">
+      <h3>CALENDAR </h3>
+    </a>
+    <a href="#" class="box" id="timer_1">
+      <img src="images/clock.jpg" alt="">
+      <h3>TIMER</h3>
+    </a>
+    <a href="#" class="box" id="stop_watch_1">
+      <img src="images/stopwatch.png" alt="">
+      <h3>STOPWATCH</h3>
+    </a>
+    <a href="#" class="box" id="to_do_list_1">
+      <img src="images/to do list.png" alt="">
+      <h3 >TO-DO LIST</h3>
+    </a>
+  </div>
+</div>
+
+
+  </div>
+ 
+  <!-- java script  -->
+
+  <script>
+    let submenu = document.getElementById("submenu")
+    function toggleMenu() {
+      submenu.classList.toggle("open-menu");
+    }
+  </script>
+<script src="homepage.js"></script>
+</body>
+
+</html>

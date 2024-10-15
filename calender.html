@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calender.css" />
+    <title>Calendar</title>
+    
+</head>
+<body>
+    <h2>Calendar</h2>
+    <div class="container">
+        <div class="left">
+          <div id="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">April 2024</div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="days" id="day"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="dd/mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">Sat</div>
+          <div class="event-date">27th April 2024</div>
+        </div>
+        <script src="calendar.js"></script>
+</body>
+</html>            
+
+    
